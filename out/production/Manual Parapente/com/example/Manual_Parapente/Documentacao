@@ -1,0 +1,51 @@
+Autor : Lucas Junior
+Autor : Gabriel Silva
+A documentação do Projeto
+===================================!=================================
+  Configuracao do ambiente
+  precisa dos JAVAS instalados na sua máquina.
+  precisa dos SDKs android instalados.
+  Api usada 19.
+  Ambiente de desenvolvimento: IntelliJ IDEA 14.0.3
+  Qualquer dúvida me fale, pois eu mesmo sofri para configurar essa bosta.
+===================================="================================
+  Cada classe  tem como padrao herdar uma activity, caso voce queira criar uma atividade.
+  exemplo:
+   public class myclass extends Activity.
+  Esta classe possui alguns metodos a serem implementados.
+  exemplo:
+    public void onCreate(), como esse metodo é herdado, estão devemos  chamar o construtor pai.
+    super.onCreate(). passando os devidos parametros.
+
+  Relacionamento: Activity com layout
+  Para entendimento devemos saber que toda Activity terá um relacionamento com um layout, obs : esse layout feito em XML.
+  Exemplo:
+   setContentView(R.layout.mylayout);
+   estude um pouco sobre a classe R.
+
+   Sobre o banco de dados:
+     o banco de dados já esta populado, assim o aplicativo só terá a funcionalidade de ler as tabelas.
+     possuimos uma tabela para cada dado, com suas respectivas colunas.
+       tabela girias.
+       tabela equipamentos.
+       tabela meteorologia.
+       tabela regras.
+       tabela voos.
+    Obs: as consultas estão sendo realizadas no banco  com sql.
+    A classe database tem como proposito copiar o banco de dados externo para dentro do dispositivo, aonde será instalado o app.
+    Dê uma olhada^^.
+
+   Sobre o funcionamento do projeto.
+     toda classe em tempo de execucao irar chamar a classe componenteClass aonde será redenrizado todos os componentes na tela.
+     deste modo o aplicativo não precisará ter uma classe para cada regra ou giria.
+
+     Obs: Como todas as classes são iguais. irei cometar uma que servirá de base para as outras.
+     classe comentada: Regras.
+
+   =================================//============================================
+   O que não foi feito ainda no projeto.
+     redimensionar layout para diversos dispositivos.
+     melhorar o frontend.
+     previsao de publicacao : final do mes, se Deus quiser.
+
+

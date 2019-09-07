@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.example.Manual_Parapente"
+          android:versionCode="1"
+          android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19"/>
+    <application android:label="@string/app_name" android:icon="@drawable/icon"
+                 android:theme="@android:style/Theme.Holo.Light">
+        /*neste xml são declaradas todas configuracoes que serao necessarias para a execucão do programa no dispositivo do cliente ou usuario*/
+        <activity android:name="main"
+                  android:screenOrientation="portrait"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        // declaracao da activity regras com suas configurações.
+        <activity android:name=".regras"
+                  android:icon="@drawable/rules"
+                  android:screenOrientation="portrait"
+                  android:label="Regras">
+        </activity>
+        <activity android:name=".voos"
+                  android:icon="@drawable/flights"
+                  android:screenOrientation="portrait"
+                  android:label="Voos">
+        </activity>
+        <activity android:name=".meteorologia"
+                  android:icon="@drawable/meteorology"
+                  android:screenOrientation="portrait"
+                  android:label="Meteorologia">
+        </activity>
+        <activity android:name=".equipamentos"
+                  android:icon="@drawable/equipment"
+                  android:screenOrientation="portrait"
+                  android:label="Equipamentos">
+        </activity>
+        <activity android:name=".girias"
+                  android:icon="@drawable/slang"
+                  android:screenOrientation="portrait"
+                  android:label="Termos do parapente">
+        </activity>
+        <activity android:name=".componenteClass"
+                  android:screenOrientation="portrait"
+                  android:label="Manual Parapente">
+        </activity>
+    </application>
+    <supports-screens android:resizeable = "true"
+                      android:smallScreens="true"
+                      android:normalScreens="true"
+                    />
+</manifest>
